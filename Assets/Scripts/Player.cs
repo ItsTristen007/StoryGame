@@ -121,7 +121,7 @@ public class Player : MonoBehaviour
         countText.text = "Count: " + count.ToString();
         
         // if they got all the coins display the win text sounds and buttons 
-        if (count >= 15) // can change number to the amount of collectables there are
+        if (count >= 35) // can change number to the amount of collectables there are
         {
             //shows all the buttons 
             playAgainButton.SetActive(true);
