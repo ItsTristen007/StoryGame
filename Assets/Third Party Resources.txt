@@ -1,9 +1,0 @@
-Third Party Resources:
-
-Textbox/Dialogue Implementation 
- 
-https://assetstore.unity.com/packages/tools/utilities/dialogue-editor-168329?aid=1101l9Bhe 
-
-Lecture Content
-
-uses: to help with glow shading, toon shading, metal shading, Luts, Hologram shading, Lambert, diffuse and specular lighting 
