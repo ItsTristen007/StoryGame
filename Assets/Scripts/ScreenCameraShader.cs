@@ -12,12 +12,12 @@ public class ScreenCameraShader : MonoBehaviour
 
     private Material[] luts;
     private bool[] lutEnabled;
-    private int currentLutIndex = -1; // Start with no LUT
+    private int currentLutIndex = -1; 
 
     void Start()
     {
         luts = new Material[] { Lut1, Lut2, Lut3, Lut4 };
-        lutEnabled = new bool[] { true, true, true, true }; // All LUTs enabled by default
+        lutEnabled = new bool[] { true, true, true, true }; 
     }
 
     void Update()
@@ -49,10 +49,10 @@ public class ScreenCameraShader : MonoBehaviour
         {
             lutEnabled[index] = !lutEnabled[index];
 
-            // If the current LUT is toggled off, switch to the next enabled one
+            
             if (currentLutIndex == index && !lutEnabled[index])
             {
-                currentLutIndex = -1; // Reset current LUT
+                currentLutIndex = -1; 
             }
         }
     }
@@ -65,7 +65,7 @@ public class ScreenCameraShader : MonoBehaviour
         }
         else
         {
-            Graphics.Blit(source, destination); // No LUT, just copy the source
+            Graphics.Blit(source, destination); 
         }
     }
 }

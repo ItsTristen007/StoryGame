@@ -6,7 +6,7 @@ Shader "Custom/Lut Shader"
         _Contribution("Contribution", Range(0, 1)) = 1
     }
     SubShader
-    { // No culling or depth
+    { 
         Cull Off ZWrite Off ZTest Always
         Pass
         { CGPROGRAM
@@ -15,11 +15,13 @@ Shader "Custom/Lut Shader"
             #include "UnityCG.cginc"
             #define COLORS 32.0
             struct appdata
-            { float4 vertex : POSITION;
+            {
+                float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
             };
             struct v2f
-            { float2 uv : TEXCOORD0;
+            {
+                float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
             };
             v2f vert (appdata v)
